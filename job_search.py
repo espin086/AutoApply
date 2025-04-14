@@ -16,11 +16,8 @@ async def main():
     # Create the agent with minimal configuration
     agent = Agent(
         task=f"""
-        1. Go to indeed.com. You need to login with my Google Account. 
-        Use the email and password from the .env file.
-        You need to click on the "Continue with Google" button.
-           email: {os.environ.get("INDEED_EMAIL")}
-           password: {os.environ.get("INDEED_PASSWORD")}
+        1. Go to indeed.com. 
+        2. IMPORTANT: WAIT UNTIL I have signed in to the account. Give me 60 seconds before moving on to the next step.
         2. Search for jobs with the title "Principal Machine Learning Engineer"
         3. Apply filters for:
            - Remote jobs only
