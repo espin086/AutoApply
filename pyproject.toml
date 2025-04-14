@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "autoapply"
+version = "0.1.0"
+description = ""
+authors = ["JJ <4843736+espin086@users.noreply.github.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+browser-use = "^0.1.40"
+langchain-google-genai = "^2.1.2"
+python-dotenv = "^1.1.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
